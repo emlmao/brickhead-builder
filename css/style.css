@@ -153,35 +153,20 @@ main {
     justify-content: center;
     align-items: center;
     height: 300px;
+    perspective: 800px;
 }
 
 .object-placeholder {
-    width: 200px;
-    height: 200px;
     position: relative;
 }
 
-.cube-wireframe {
+.hero-photo {
+    max-width: 220px;
     width: 100%;
-    height: 100%;
-    border: 2px solid var(--sage);
-    background: rgba(168, 181, 160, 0.1);
-    position: relative;
-    animation: gentleRotate 20s linear infinite;
-    border-radius: 8px;
-}
-
-.cube-wireframe::before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 1px dashed var(--dusty-blue);
+    height: auto;
     border-radius: 12px;
-    opacity: 0.3;
-    animation: gentleRotate 25s linear infinite reverse;
+    box-shadow: 0 8px 30px rgba(45, 52, 54, 0.15);
+    animation: gentleSway 6s ease-in-out infinite;
 }
 
 /* Hero Description */
@@ -560,6 +545,15 @@ footer {
     }
     to {
         transform: rotateY(360deg) rotateX(10deg);
+    }
+}
+
+@keyframes gentleSway {
+    0%, 100% {
+        transform: rotateY(-12deg);
+    }
+    50% {
+        transform: rotateY(12deg);
     }
 }
 

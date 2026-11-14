@@ -122,16 +122,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     }
 
-    // Add subtle animation to wireframe cube
-    const cubeWireframe = document.querySelector('.cube-wireframe');
-    if (cubeWireframe) {
-        let rotation = 0;
-        setInterval(() => {
-            rotation += 0.5;
-            cubeWireframe.style.transform = `rotateY(${rotation}deg) rotateX(10deg)`;
-        }, 50);
-    }
-
     // Lab entry stagger animation
     setTimeout(() => {
         const entries = document.querySelectorAll('.lab-entry');
