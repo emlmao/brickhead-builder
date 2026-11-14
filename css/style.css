@@ -328,6 +328,15 @@ main {
     font-weight: 600;
 }
 
+.process-video {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(45, 52, 54, 0.1);
+}
+
 /* Photo Grid */
 .photo-grid {
     display: grid;
