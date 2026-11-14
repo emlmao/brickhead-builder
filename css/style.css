@@ -434,18 +434,24 @@ main {
 }
 
 .contact-email {
-    font-size: 0.6rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Orbitron', monospace;
+    font-size: 1.1rem;
+    line-height: 1;
     color: var(--ink-blue);
-    text-decoration: underline;
-    text-decoration-color: var(--sage);
-    text-underline-offset: 3px;
+    text-decoration: none;
     font-weight: 500;
+    padding: 0.3rem 0.9rem;
+    border: 1px solid var(--sage);
+    border-radius: 999px;
     margin-left: 0.6rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .contact-email:hover {
-    color: var(--sage);
+    background: var(--sage);
+    color: var(--paper-white);
 }
 
 @media (max-width: 480px) {
@@ -456,7 +462,7 @@ main {
     }
 
     .contact-email {
-        font-size: 0.55rem;
+        margin-left: 0;
         word-break: break-all;
     }
 }
