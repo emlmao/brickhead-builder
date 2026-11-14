@@ -419,33 +419,29 @@ main {
     text-align: center;
 }
 
-.contact-content {
-    display: flex;
-    justify-content: center;
-}
-
 .contact-email {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--ink-blue);
-    text-decoration: none;
-    letter-spacing: 1px;
-    padding: 1rem 2rem;
-    border: 2px solid var(--sage);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: var(--sage);
+    text-underline-offset: 3px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .contact-email:hover {
-    background: var(--sage);
-    color: var(--paper-white);
+    color: var(--sage);
 }
 
 @media (max-width: 480px) {
+    .contact-section .section-subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
     .contact-email {
-        font-size: 0.7rem;
-        padding: 0.75rem 1.25rem;
+        font-size: 0.75rem;
         word-break: break-all;
     }
 }
