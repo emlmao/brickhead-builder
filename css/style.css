@@ -420,7 +420,7 @@ main {
 }
 
 .contact-email {
-    font-size: 0.85rem;
+    font-size: 0.6rem;
     color: var(--ink-blue);
     text-decoration: underline;
     text-decoration-color: var(--sage);
@@ -441,7 +441,7 @@ main {
     }
 
     .contact-email {
-        font-size: 0.75rem;
+        font-size: 0.55rem;
         word-break: break-all;
     }
 }
